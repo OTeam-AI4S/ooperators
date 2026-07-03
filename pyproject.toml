@@ -1,0 +1,55 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+  "setuptools>=77",
+  "wheel",
+]
+
+[project]
+name = "ooperators"
+version = "0.0.0"
+description = "Operators for AI4S"
+readme = "README.md"
+keywords = [
+  "ai4s",
+  "machine-learning",
+  "operators",
+  "science",
+]
+license = "AGPL-3.0-or-later"
+license-files = ["license.md"]
+maintainers = [
+  { name = "Zhiyuan Chen", email = "this@zyc.ai" },
+]
+authors = [
+  { name = "Zhiyuan Chen", email = "this@zyc.ai" },
+]
+requires-python = ">=3.10"
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+homepage = "https://github.com/OTeam-AI4S/ooperators"
+repository = "https://github.com/OTeam-AI4S/ooperators"
+
+[tool.setuptools]
+packages = ["ooperators"]
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+line_length = 120
+profile = "black"
